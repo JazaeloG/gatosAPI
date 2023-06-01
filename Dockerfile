@@ -4,14 +4,14 @@ ENV PYTHONDONTWRITEBYTECODE 1
 
 ENV PYTHONUNBUFFERED 1
 
-RUN mkdir /hackernews
+RUN mkdir /gatosapi
 
-WORKDIR /hackernews
+WORKDIR /gatosapi
 
-COPY requirements.txt /hackernews/
+COPY requirements.txt /gatosapi/
 
 RUN pip install -r requirements.txt
 
-COPY . /hackernews/
+COPY . /gatosapi/
 
 CMD python manage.py runserver 0.0.0.0:8080
