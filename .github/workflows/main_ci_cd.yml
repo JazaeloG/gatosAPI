@@ -1,4 +1,4 @@
-name: master - Okteto CI/CD
+name: main - Okteto CI/CD
 
 # Controls when the action will run. 
 on:
